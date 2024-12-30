@@ -86,5 +86,5 @@ def process_action(action, task, tasks, llm):
         else:
             answer = "Here are your all tasks.\n"
             for t in tasks:
-                answer += f'''{t["task"]} - {t["status"].upper()}'''
+                answer += f'''{t["task"]} - {t["status"].upper()}\n'''
     return tasks, answer
